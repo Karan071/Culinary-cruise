@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 // import '../../assets/assets'
 import { assets } from '../../assets/assets'
 
 const Navbar = () => {
+    // Fot the underline dynamic effect :  making the default state as Home
+    const [menu,setMenu] = useState("Home");
+
   return (
     <div className='navbar'>
         <img src={assets.logo} alt="" className="logo" />

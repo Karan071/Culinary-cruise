@@ -35,3 +35,26 @@
 .navbar button:hover{
     background-color: #ee4c2b1f;
 }
+
+/* //dynamic effect which remembers the state */
+.navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+    cursor: pointer;
+}
+
+
+/* the dot is hidden if the cart is empty(buy icon) */
+.navbar-search-icon{
+    position: relative;
+}
+.navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 10px;
+    /* poistion of dots */
+    top: -10px;
+    right: -10px;
+}

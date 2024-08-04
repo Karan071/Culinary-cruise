@@ -1,8 +1,19 @@
-# React + Vite
+# Culinary cruise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is Fully functional website 
 
-Currently, two official plugins are available:
+The Conceps implement of React 
+- Context providers
+- React Hooks
+-
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
+
+
+
+Time Stamp to start from  : 1:34:28 / 10:01:04
+Link : https://www.youtube.com/watch?v=DBMPXJJfQEA

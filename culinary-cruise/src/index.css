@@ -4,6 +4,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Poppins;
+    /* for the smooth scrolls while jumping to the sections */
+    scroll-behavior: smooth; 
 }
 body{
     min-height: 100vh;

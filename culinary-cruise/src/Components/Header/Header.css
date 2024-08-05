@@ -34,5 +34,24 @@
     padding: 1vh 2.3vw;
     background-color: white;
     font-size: max(1vw,13px);
+}
 
+/* Making the header responsive */
+@media (max-width :1050px){
+    
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
 }

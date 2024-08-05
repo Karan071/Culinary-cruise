@@ -47,3 +47,16 @@
     max-height: max(5vh, 120px); 
     padding: 5px;
 }
+
+/* Making footer responsive */
+@media (max-width: 750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        align-items: center;
+    }
+    
+}

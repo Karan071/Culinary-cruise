@@ -18,7 +18,7 @@
 .footer-content-left, .footer-content-right, .footer-content-center{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 20px;
 }
 
@@ -41,4 +41,9 @@
     margin: 20px 0;
     background-color: grey;
     border: none;
+}
+.footer-content-left img{
+    /* max-height: 150px;*/
+    max-height: max(5vh, 120px); 
+    padding: 5px;
 }

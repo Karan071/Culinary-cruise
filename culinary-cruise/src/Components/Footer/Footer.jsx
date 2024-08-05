@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="footer-content">
             <div className='footer-content-left'>
                 <img src={assets.logo} alt="" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis explicabo distinctio optio iure fugiat ab, repudiandae eligendi repellat nesciunt, facere, laudantium ad possimus. Asperiores unde tenetur debitis! Laboriosam, minus.</p>
+                <p>Culinary Cruise is a premier food delivery app bringing gourmet meals from top restaurants straight to your doorstep, ensuring a delightful and convenient dining experience every time.</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="icons" />
                     <img src={assets.twitter_icon} alt="icons" />

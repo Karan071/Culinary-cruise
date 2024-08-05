@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar .logo{
-    width: 150px;
+    max-height: max(4vh, 120px);
 }
 
 .navbar-menu{

@@ -4,7 +4,6 @@ import { assets } from '../../assets/assets'
 import { Link } from 'wouter'
 
 
-
 const Navbar = ({setShowLogin}) => {
     // For the underline dynamic effect :  making the default state as Home
     const [menu,setMenu] = useState("Home"); // Making the Home as default

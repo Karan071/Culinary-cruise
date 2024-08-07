@@ -124,7 +124,7 @@ export const food_list = [
         _id: "1",
         name: "Greek salad",
         image: food_1,
-        price: "₹450",
+        price: "450",
         description: "A refreshing salad with Greek ingredients like olives, feta cheese, and cucumbers.",
         category: "Salad"
     },
@@ -132,7 +132,7 @@ export const food_list = [
         _id: "2",
         name: "Veg salad",
         image: food_2,
-        price: "₹675",
+        price: "675",
         description: "A delicious salad packed with fresh vegetables.",
         category: "Salad"
     },
@@ -140,7 +140,7 @@ export const food_list = [
         _id: "3",
         name: "Clover Salad",
         image: food_3,
-        price: "₹600",
+        price: "600",
         description: "A healthy salad featuring clover sprouts and mixed greens.",
         category: "Salad"
     },
@@ -148,7 +148,7 @@ export const food_list = [
         _id: "4",
         name: "Chicken Salad",
         image: food_4,
-        price: "₹900",
+        price: "900",
         description: "A protein-rich salad with tender chicken pieces.",
         category: "Salad"
     },
@@ -156,7 +156,7 @@ export const food_list = [
         _id: "5",
         name: "Lasagna Rolls",
         image: food_5,
-        price: "₹525",
+        price: "525",
         description: "Lasagna in a roll, filled with cheese and savory sauce.",
         category: "Rolls"
     },
@@ -164,7 +164,7 @@ export const food_list = [
         _id: "6",
         name: "Peri Peri Rolls",
         image: food_6,
-        price: "₹450",
+        price: "450",
         description: "Spicy rolls with a tangy peri peri sauce.",
         category: "Rolls"
     },
@@ -172,7 +172,7 @@ export const food_list = [
         _id: "7",
         name: "Chicken Rolls",
         image: food_7,
-        price: "₹750",
+        price: "750",
         description: "Rolls filled with flavorful chicken.",
         category: "Rolls"
     },
@@ -180,7 +180,7 @@ export const food_list = [
         _id: "8",
         name: "Veg Rolls",
         image: food_8,
-        price: "₹563",
+        price: "563",
         description: "Rolls stuffed with a variety of fresh vegetables.",
         category: "Rolls"
     },
@@ -188,7 +188,7 @@ export const food_list = [
         _id: "9",
         name: "Ripple Ice Cream",
         image: food_9,
-        price: "₹525",
+        price: "525",
         description: "Creamy ice cream with a ripple of rich flavor.",
         category: "Desserts"
     },
@@ -196,7 +196,7 @@ export const food_list = [
         _id: "10",
         name: "Fruit Ice Cream",
         image: food_10,
-        price: "₹825",
+        price: "825",
         description: "Ice cream made with real fruit for a refreshing taste.",
         category: "Desserts"
     },
@@ -204,7 +204,7 @@ export const food_list = [
         _id: "11",
         name: "Jar Ice Cream",
         image: food_11,
-        price: "₹375",
+        price: "375",
         description: "Delicious ice cream served in a jar.",
         category: "Desserts"
     },
@@ -212,7 +212,7 @@ export const food_list = [
         _id: "12",
         name: "Vanilla Ice Cream",
         image: food_12,
-        price: "₹450",
+        price: "450",
         description: "Classic and creamy vanilla ice cream.",
         category: "Desserts"
     },
@@ -220,7 +220,7 @@ export const food_list = [
         _id: "13",
         name: "Chicken Sandwich",
         image: food_13,
-        price: "₹450",
+        price: "450",
         description: "A hearty sandwich with tender chicken.",
         category: "Sandwich"
     },
@@ -228,7 +228,7 @@ export const food_list = [
         _id: "14",
         name: "Vegan Sandwich",
         image: food_14,
-        price: "₹675",
+        price: "675",
         description: "A delicious sandwich with vegan ingredients.",
         category: "Sandwich"
     },
@@ -236,7 +236,7 @@ export const food_list = [
         _id: "15",
         name: "Grilled Sandwich",
         image: food_15,
-        price: "₹600",
+        price: "600",
         description: "A perfectly grilled sandwich with your favorite fillings.",
         category: "Sandwich"
     },
@@ -244,7 +244,7 @@ export const food_list = [
         _id: "16",
         name: "Bread Sandwich",
         image: food_16,
-        price: "₹900",
+        price: "900",
         description: "A simple and classic bread sandwich.",
         category: "Sandwich"
     },
@@ -252,7 +252,7 @@ export const food_list = [
         _id: "17",
         name: "Cup Cake",
         image: food_17,
-        price: "₹525",
+        price: "525",
         description: "A delightful single-serving cake in a cup.",
         category: "Cake"
     },
@@ -260,7 +260,7 @@ export const food_list = [
         _id: "18",
         name: "Vegan Cake",
         image: food_18,
-        price: "₹450",
+        price: "450",
         description: "A delicious cake made with vegan ingredients.",
         category: "Cake"
     },
@@ -268,7 +268,7 @@ export const food_list = [
         _id: "19",
         name: "Butterscotch Cake",
         image: food_19,
-        price: "₹750",
+        price: "750",
         description: "A rich and flavorful butterscotch cake.",
         category: "Cake"
     },
@@ -276,7 +276,7 @@ export const food_list = [
         _id: "20",
         name: "Sliced Cake",
         image: food_20,
-        price: "₹563",
+        price: "563",
         description: "A slice of delicious cake, perfect for any occasion.",
         category: "Cake"
     },
@@ -284,7 +284,7 @@ export const food_list = [
         _id: "21",
         name: "Garlic Mushroom",
         image: food_21,
-        price: "₹525",
+        price: "525",
         description: "Sautéed mushrooms with a garlic twist.",
         category: "Pure Veg"
     },
@@ -292,7 +292,7 @@ export const food_list = [
         _id: "22",
         name: "Fried Cauliflower",
         image: food_22,
-        price: "₹825",
+        price: "825",
         description: "Crispy and tasty fried cauliflower.",
         category: "Pure Veg"
     },
@@ -300,7 +300,7 @@ export const food_list = [
         _id: "23",
         name: "Mix Veg Pulao",
         image: food_23,
-        price: "₹375",
+        price: "375",
         description: "A fragrant rice dish with mixed vegetables.",
         category: "Pure Veg"
     },
@@ -308,7 +308,7 @@ export const food_list = [
         _id: "24",
         name: "Rice Zucchini",
         image: food_24,
-        price: "₹450",
+        price: "450",
         description: "A healthy rice dish with zucchini.",
         category: "Pure Veg"
     },
@@ -316,7 +316,7 @@ export const food_list = [
         _id: "25",
         name: "Cheese Pasta",
         image: food_25,
-        price: "₹450",
+        price: "450",
         description: "Creamy pasta with a cheesy delight.",
         category: "Pasta"
     },
@@ -324,7 +324,7 @@ export const food_list = [
         _id: "26",
         name: "Tomato Pasta",
         image: food_26,
-        price: "₹675",
+        price: "675",
         description: "Pasta in a rich tomato sauce.",
         category: "Pasta"
     },
@@ -332,7 +332,7 @@ export const food_list = [
         _id: "27",
         name: "Creamy Pasta",
         image: food_27,
-        price: "₹600",
+        price: "600",
         description: "Smooth and creamy pasta dish.",
         category: "Pasta"
     },
@@ -340,7 +340,7 @@ export const food_list = [
         _id: "28",
         name: "Chicken Pasta",
         image: food_28,
-        price: "₹900",
+        price: "900",
         description: "Pasta with tender chicken pieces.",
         category: "Pasta"
     },
@@ -348,7 +348,7 @@ export const food_list = [
         _id: "29",
         name: "Butter Noodles",
         image: food_29,
-        price: "₹525",
+        price: "525",
         description: "Noodles tossed in butter for a rich flavor.",
         category: "Noodles"
     },
@@ -356,7 +356,7 @@ export const food_list = [
         _id: "30",
         name: "Veg Noodles",
         image: food_30,
-        price: "₹450",
+        price: "450",
         description: "Noodles with a mix of fresh vegetables.",
         category: "Noodles"
     },
@@ -364,7 +364,7 @@ export const food_list = [
         _id: "31",
         name: "Somen Noodles",
         image: food_31,
-        price: "₹750",
+        price: "750",
         description: "Light and delicate Somen noodles.",
         category: "Noodles"
     },
@@ -372,11 +372,12 @@ export const food_list = [
         _id: "32",
         name: "Cooked Noodles",
         image: food_32,
-        price: "₹563",
+        price: "563",
         description: "Perfectly cooked noodles with your favorite toppings.",
         category: "Noodles"
     }
 ];
+
 
 
 

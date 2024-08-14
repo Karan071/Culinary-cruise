@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'wouter'
+import {getTotalCartAmount} from '../../context/StoreContext';
 
 
 const Navbar = ({setShowLogin}) => {
     // For the underline dynamic effect :  making the default state as Home
     const [menu,setMenu] = useState("Home"); // Making the Home as default
+
+    const {getTotalCartAmount} = useContext(StoreContext);
 
   return (
     <div className='navbar'>
@@ -22,7 +25,7 @@ const Navbar = ({setShowLogin}) => {
             <img src={assets.search_icon} alt="" />
             <div className="navbar-search-icon">
                 <Link to='/cart'><img src={assets.basket_icon}/></Link>
-                <div className="dot"></div>
+                <div className={getTotalCartAmount()=== 0 ?"":"dot"}></div>
             </div>
             <button onClick={()=>setShowLogin(true)}>Sign In</button>   
         </div>

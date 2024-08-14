@@ -4,8 +4,9 @@ import { StoreContext } from "../../context/StoreContext";
 
 const Cart = () => {
   // adding the cart functionality
-  const { food_list, cartItems, addToCart, setCartItems, removeFromCart } =
-    useContext(StoreContext);
+  const { food_list, cartItems, addToCart, setCartItems, removeFromCart , getTotalCartAmount} = useContext(StoreContext);
+
+  const DeliveryCharges = 40;
 
   return (
     <div className="cart">
@@ -41,6 +42,37 @@ const Cart = () => {
             );
           }
         })}
+      </div>
+      <div className="cart-bottom">
+        <div className="cart-total">
+          <h2>Cart Total</h2>
+          <div>
+            <div className="cart-total-details">
+              <p>Sub Total</p>
+              <p> ₹ {getTotalCartAmount()}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
+              <p>Delivery Fees</p>
+              <p>₹ {40}</p>
+            </div>
+            <hr />
+            <div className="cart-total-details">
+              <b>Total</b>
+              <b>₹  {getTotalCartAmount()  + 40}</b>
+            </div>
+          </div>
+            <button>PROCEED TO PAY</button>
+        </div>
+        <div className="cart-promocode">
+          <div>
+            <p>Got a promo code? Enter it here.</p>
+            <div className="cart-promocode-input">
+              <input type="text " placeholder="Promo-code" />
+              <button>Submit</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

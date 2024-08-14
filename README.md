@@ -2,7 +2,7 @@
 
 
 
-## For Backend
+## For Backend : Dependencies utilised
 
 - **mongoose**: A MongoDB object modeling tool designed to work in an asynchronous environment.
 - **jsonwebtoken**: A compact and secure way of transmitting information between parties as a JSON object.

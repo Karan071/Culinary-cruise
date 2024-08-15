@@ -4,15 +4,16 @@
   margin-top: 50px;
   color: #6d6d6d;
   font-size: 16px;
+  align-content: center;
 }
 
 .add form {
   gap: 20px;
 }
 
-.add-img-upload img {
-  width: 120px;
-}
+.img-upload img {
+    width: 150px;
+  }
 
 .add-product-name,
 .add-product-description {
@@ -32,7 +33,7 @@
 .add-category-price select,
 .add-category-price input {
   max-width: 120px;
-  padding: 10px;
+  padding: 10px; 
 }
 
 .add-btn {

@@ -2,7 +2,8 @@ import React, { useContext, useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'wouter'
-import {getTotalCartAmount} from '../../context/StoreContext';
+// import { getTotalCartAmount } from '/src/context/StoreContext.jsx';
+import { StoreContext } from '/src/context/StoreContext.jsx';
 
 
 const Navbar = ({setShowLogin}) => {

@@ -1,6 +1,9 @@
+## For Frontend : Dependencies utilised
 
-
-
+- **axios**: Promise-based HTTP client for making requests to the backend.
+- **react-toastify**: Library for displaying customizable and easy-to-use toast notifications.
+- **react-router-dom**: Library for declarative routing in React applications, enabling dynamic routing and navigation.
+- **wouter**: A minimalist, hook-based router for React that offers a simple and lightweight alternative to react-router.
 
 ## For Backend : Dependencies utilised
 

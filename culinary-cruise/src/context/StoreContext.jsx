@@ -40,6 +40,13 @@ const StoreContextProvider = (props) => {
         }
     }
 
+    //for saving the token in the brower : so it wont get deleted after refreshing the page
+    useEffect(() =>{
+        if(localStorage.getItem("token")){
+            setToken(localStorage.getItem("token"));
+        }
+    },[])
+
     const contextValue = {
         food_list,
         cartItems,

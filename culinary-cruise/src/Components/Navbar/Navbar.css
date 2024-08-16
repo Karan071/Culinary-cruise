@@ -59,8 +59,45 @@
   right: -10px;
 }
 
+/* user profile button */
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff2ef;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: 2px solid;
+  list-style: none;
+}
+
+.nav-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown img{
+  width: 20px;
+}
+
+.nav-profile-dropdown li:hover{
+  color: tomato;
+}
+
 /* Making the nav bar resoponsive */
-@media (max-width: 1050px) {
+@media(max-width: 1050px) {
   .navbar .logo {
     width: 140px;
   }
@@ -79,40 +116,7 @@
   }
 }
 
-.navbar-profile{
-    position: relative;
-}
-.navbar-profile:hover{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #fff2ef;
-    padding: 12px 25px;
-    border-radius: 4px;
-    border: 1px solid tomato;
-    outline: 2px solid white;
-    list-style: none;
-} 
 
-.navbar-profile-dropdown{
-    position : absolute;
-    display: none;
-    z-index: 1;
-    right: 0;
-}
-
-.navbar-profile-dropdown li{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-.navbar-profile-dropdown img{
-    width: 20px;
-}
-.navbar-profile-dropdown li:hover{
-    color: tomato;
-}
 
 /* for more smaller screen */
 @media (max-width: 900px) {

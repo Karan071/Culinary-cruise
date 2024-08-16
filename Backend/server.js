@@ -1,9 +1,12 @@
+// require is not defined in ES module scope, you can use import instead => we have used type : "modules" in package.json
+// This file is being treated as an ES module because it has a '.js' file extension
 import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db.js";
 import foodRouter from "./routes/foodRoute.js";
-// require is not defined in ES module scope, you can use import instead => we have used type : "modules" in package.json
-// This file is being treated as an ES module because it has a '.js' file extension
+import userRouter from "./routes/userRoute.js";
+import 'dotenv/config'
+
 
 //App config
 const app = express();
@@ -20,7 +23,7 @@ connectDB();
 app.use("/api/food", foodRouter)
 //upload img
 app.use("/images",express.static('uploads'))
-
+app.use("/api/user",userRouter)
 
 
 app.get("/", (req, res) => {

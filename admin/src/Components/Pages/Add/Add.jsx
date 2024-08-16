@@ -5,9 +5,8 @@ import { useState } from "react";
 import axios from "axios"
 import { toast } from "react-toastify";
 
-const Add = () => {
+const Add = ({url}) => {
 
-  const url = "http://localhost:3000"
   const [image,setImage] = useState(false); //img preview
   const [data,setData] = useState({
     name : "",

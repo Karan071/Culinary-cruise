@@ -25,7 +25,7 @@ app.use("/api/food", foodRouter)
 //upload img
 app.use("/images",express.static('uploads'));
 app.use("/api/user",userRouter);
-app.use("api/cart", cartRouter);
+app.use("/api/cart", cartRouter);
 
 
 app.get("/", (req, res) => {

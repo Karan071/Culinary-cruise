@@ -1,12 +1,11 @@
 import express from "express"
-import {addToCart,removeFromCart,getCart} from "../controllers/cartController.js";
-import authMiddleware from "../middlewares/auth.js";
+import { addToCart,removeFromCart,getCart } from "../controllers/cartController.js"
+import authmiddleware from "../middlewares/auth.js"
 
 const cartRouter = express.Router()
 
+cartRouter.post("/add",authmiddleware,addToCart)
+cartRouter.post("/remove",authmiddleware,removeFromCart)
+cartRouter.post("/get",authmiddleware,getCart)
 
-cartRouter.post("/add", authMiddleware, addToCart)
-cartRouter.post("/get", authMiddleware, getCart)
-cartRouter.post("/remove", authMiddleware, removeFromCart)
-
-export default cartRouter; 
+export default cartRouter;

@@ -1,10 +1,14 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext";
+import { useNavigate } from 'react-router-dom';
+
 
 const Cart = () => {
   // adding the cart functionality
-  const { food_list, cartItems, addToCart, setCartItems, removeFromCart , getTotalCartAmount} = useContext(StoreContext);
+  const { food_list, cartItems, addToCart, setCartItems, removeFromCart , getTotalCartAmount, url} = useContext(StoreContext);
+
+   const navigate = useNavigate();
 
   const DeliveryCharges = 40;
 
@@ -27,10 +31,10 @@ const Cart = () => {
             return (
               <div>
                 <div className="cart-items-title cart-items-item">
-                  <img src={item.image} />
+                  <img src={url + "/images/" + item.image} />
                   <p>{item.name}</p>
                   <p>₹ {item.price}</p>
-                  <p>{cartItems[item._id]}</p>{" "}
+                  <p>{cartItems[item._id]}</p>
                   {/* // this will show quatity of the items selected */}
                   {/* <p>{console.log(cartItems[item._id])}</p> */}
                   <p>₹ {item.price * cartItems[item._id]}</p>
@@ -62,7 +66,7 @@ const Cart = () => {
               <b>₹  {getTotalCartAmount()  + 40}</b>
             </div>
           </div>
-            <button>PROCEED TO PAY</button>
+            <button onClick={() => navigate('/order')}>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode">
           <div>

@@ -1,11 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import StoreContextProvider from "./context/StoreContext.jsx";
-import { BrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import StoreContextProvider from './Components/context/StoreContext.jsx'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <StoreContextProvider>
       <App />

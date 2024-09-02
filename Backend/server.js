@@ -1,38 +1,33 @@
-// require is not defined in ES module scope, you can use import instead => we have used type : "modules" in package.json
-// This file is being treated as an ES module because it has a '.js' file extension
-import express from "express";
-import cors from "cors";
-import { connectDB } from "./config/db.js";
-import foodRouter from "./routes/foodRoute.js";
-import userRouter from "./routes/userRoute.js";
-import "dotenv/config";
-import cartRouter from "./routes/cartRoute.js";
-import orderRouter from "./routes/orderRoute.js";
+import express from "express"
+import cors from "cors"
+import { connectDB } from "./config/db.js"
+import foodRouter from "./Routes/foodRoute.js"
+import userRouter from "./Routes/userRoute.js"
+import cartRouter from "./Routes/cartRoute.js"
+import orderRouter from "./Routes/orderRoute.js"
 
-//App config
-const app = express();
-const port = 3000;
+//app cinfig
+const app = express()
+const port = 4000
 
-//Middleware
-app.use(express.json());
-app.use(cors());
+//middleware
+app.use(express.json())
+app.use(cors())
 
-// db connection string
+//db connection
 connectDB();
 
-//api endpoint
-app.use("/api/food", foodRouter);
-//upload img
-app.use("/images", express.static("uploads"));
-app.use("/api/user", userRouter);
-app.use("/api/cart", cartRouter);
-app.use("/api/order", orderRouter);
+//api end points
+app.use("/api/food",foodRouter);
+app.use("/images", express.static("uploads")); // files will be saved here
+app.use("/api/user", userRouter)
+app.use("/api/cart", cartRouter)
+app.use("/api/order", orderRouter)
 
-app.get("/", (req, res) => {
-  res.send("Api is working");
-});
+app.get('/', (req,res) => {
+    res.send("mf")
+})
 
-//listening to the ports
-app.listen(port, () =>
-  console.log(`App is listening on port http://localhost:${port}`)
-);
+app.listen(port, () =>{
+    console.log(`Server is running on http://localhost:${port}`)
+})

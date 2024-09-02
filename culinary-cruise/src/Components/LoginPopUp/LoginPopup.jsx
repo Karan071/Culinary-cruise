@@ -1,8 +1,9 @@
 import React, { useContext,useState } from 'react'
 import './LoginPopup.css'
 import { assets } from '../../assets/assets'
-import { StoreContext } from '../../context/StoreContext'
+
 import axios from "axios"
+import { StoreContext } from '../context/StoreContext'
 
 const LoginPopup = ({setShowLogin}) => {
 
@@ -68,7 +69,6 @@ const LoginPopup = ({setShowLogin}) => {
                     {currState === "Login" 
                     ? <p> Create a new account ? <span onClick={() => setcurrState("Sign Up")} >Click here</span></p> 
                     : <p>Already have an account? <span onClick={() => setcurrState("Login")}>Login here</span></p> }
-                   
                     
                 </form>
             </div>

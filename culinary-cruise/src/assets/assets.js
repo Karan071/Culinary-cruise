@@ -60,64 +60,69 @@ import bag_icon from "./bag_icon.png";
 import logout_icon from "./logout_icon.png";
 import parcel_icon from "./parcel_icon.png";
 import cruise_footer_logo from "./crusine-footer-logo.png"
+import github_logo from "./github-logo.png"
+import inbox_icon from "./inbox_icon.png"
 
-export const assets = {
-  logo,
-  basket_icon,
-  header_img,
-  search_icon,
-  rating_starts,
-  add_icon_green,
-  add_icon_white,
-  remove_icon_red,
-  app_store,
-  play_store,
-  linkedin_icon,
-  facebook_icon,
-  twitter_icon,
-  cross_icon,
-  selector_icon,
-  profile_icon,
-  logout_icon,
-  bag_icon,
-  parcel_icon,
-  cruise_footer_logo
-};
 
-export const menu_list = [
-  {
-    menu_name: "Salad",
-    menu_image: menu_1,
-  },
-  {
-    menu_name: "Rolls",
-    menu_image: menu_2,
-  },
-  {
-    menu_name: "Deserts",
-    menu_image: menu_3,
-  },
-  {
-    menu_name: "Sandwich",
-    menu_image: menu_4,
-  },
-  {
-    menu_name: "Cake",
-    menu_image: menu_5,
-  },
-  {
-    menu_name: "Pure Veg",
-    menu_image: menu_6,
-  },
-  {
-    menu_name: "Pasta",
-    menu_image: menu_7,
-  },
-  {
-    menu_name: "Noodles",
-    menu_image: menu_8,
-  },
-];
+    export const assets = {
+    logo,
+    basket_icon,
+    header_img,
+    search_icon,
+    rating_starts,
+    add_icon_green,
+    add_icon_white,
+    remove_icon_red,
+    app_store,
+    play_store,
+    linkedin_icon,
+    facebook_icon,
+    twitter_icon,
+    cross_icon,
+    selector_icon,
+    profile_icon,
+    logout_icon,
+    bag_icon,
+    parcel_icon,
+    cruise_footer_logo,
+    github_logo,
+    inbox_icon
+    };
+
+    export const menu_list = [
+    {
+        menu_name: "Salad",
+        menu_image: menu_1,
+    },
+    {
+        menu_name: "Rolls",
+        menu_image: menu_2,
+    },
+    {
+        menu_name: "Deserts",
+        menu_image: menu_3,
+    },
+    {
+        menu_name: "Sandwich",
+        menu_image: menu_4,
+    },
+    {
+        menu_name: "Cake",
+        menu_image: menu_5,
+    },
+    {
+        menu_name: "Pure Veg",
+        menu_image: menu_6,
+    },
+    {
+        menu_name: "Pasta",
+        menu_image: menu_7,
+    },
+    {
+        menu_name: "Noodles",
+        menu_image: menu_8,
+    },
+    ];
 
 export const food_list = [
     {
@@ -190,7 +195,7 @@ export const food_list = [
         image: food_9,
         price: "525",
         description: "Creamy ice cream with a ripple of rich flavor.",
-        category: "Desserts"
+        category: "Deserts"
     },
     {
         _id: "10",
@@ -198,7 +203,7 @@ export const food_list = [
         image: food_10,
         price: "825",
         description: "Ice cream made with real fruit for a refreshing taste.",
-        category: "Desserts"
+        category: "Deserts"
     },
     {
         _id: "11",
@@ -206,7 +211,7 @@ export const food_list = [
         image: food_11,
         price: "375",
         description: "Delicious ice cream served in a jar.",
-        category: "Desserts"
+        category: "Deserts"
     },
     {
         _id: "12",
@@ -214,7 +219,7 @@ export const food_list = [
         image: food_12,
         price: "450",
         description: "Classic and creamy vanilla ice cream.",
-        category: "Desserts"
+        category: "Deserts"
     },
     {
         _id: "13",

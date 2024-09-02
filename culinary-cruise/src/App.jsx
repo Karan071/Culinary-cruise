@@ -1,27 +1,31 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
-import {Route, Router } from "wouter";
-import Home from './Pages/Home/Home'
-import Cart from './Pages/Cart/Cart'
-import Placeorder from './Pages/Placeorder/Placeorder'
-import Footer from './Components/Footer/Footer';
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import Cart from './pages/Cart/Cart'
+import Placeorder from './pages/Placeorder/Placeorder'
+import Footer from './Components/Footer/Footer'
 import LoginPopup from './Components/LoginPopUp/LoginPopup';
+import Verify from './pages/Verify/Verify'
+import MyOrders from './pages/MyOrders/MyOrders'
 
 const App = () => {
   //state variable for popup login
   const [showLogin, setShowLogin] = useState(false);
 
-
   return (
     <>
-    {showLogin ? <LoginPopup setShowLogin = {setShowLogin}/> : <></> }
-    <div className='app'>
-     <Navbar setShowLogin={setShowLogin}/> 
-      <Router>
-        <Route path="/" component={Home} />
-        <Route path="/cart" component={Cart} />
-        <Route path="/order" component = {Placeorder} />
-      </Router>
+      {showLogin ? < LoginPopup setShowLogin = {setShowLogin}/> : <></> }
+      <div className='app'>
+      <Navbar setShowLogin= {setShowLogin}/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='/order' element={<Placeorder/>}/>
+        <Route path='/order' element={<Placeorder/>}/>
+        <Route path='/verify' element={<Verify/>}/>
+        <Route path='/myorders' element={<MyOrders/>}/>
+      </Routes>
     </div>
     <Footer/>
     </>
@@ -29,5 +33,3 @@ const App = () => {
 }
 
 export default App
-
-

@@ -60,16 +60,16 @@
 }
 
 /* user profile button */
-.navbar-profile{
-    position: relative;
+.navbar-profile {
+  position: relative;
 }
-.nav-profile-dropdown{
-    position: absolute;
-    display: none;
-    right: 0;
-    z-index: 1;
+.nav-profile-dropdown {
+  position: absolute;
+  display: none;
+  right: 0;
+  z-index: 1;
 }
-.navbar-profile:hover .nav-profile-dropdown{
+.navbar-profile:hover .nav-profile-dropdown {
   display: flex;
   flex-direction: column;
   background-color: #fff2ef;
@@ -81,23 +81,23 @@
   list-style: none;
 }
 
-.nav-profile-dropdown li{
+.nav-profile-dropdown li {
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
 }
 
-.nav-profile-dropdown img{
+.nav-profile-dropdown img {
   width: 20px;
 }
 
-.nav-profile-dropdown li:hover{
+.nav-profile-dropdown li:hover {
   color: tomato;
 }
 
 /* Making the nav bar resoponsive */
-@media(max-width: 1050px) {
+@media (max-width: 1050px) {
   .navbar .logo {
     width: 140px;
   }
@@ -115,8 +115,6 @@
     padding: 8px 25px;
   }
 }
-
-
 
 /* for more smaller screen */
 @media (max-width: 900px) {

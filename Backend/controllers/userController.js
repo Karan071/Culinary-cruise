@@ -1,9 +1,10 @@
 import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken";
-import bicrypt from "bcrypt";
+import bcrypt from "bcrypt";
 import validator from "validator";
+import "dotenv/config.js"
 
-//login user - logic
+//login user
 const loginUser = async (req, res) => {
     const {email,password} = req.body;
     try {
@@ -16,7 +17,7 @@ const loginUser = async (req, res) => {
             })
         }
         // of the user is found in db
-        const isMatched = await bicrypt.compare(password,user.password)
+        const isMatched = await bcrypt.compare(password,user.password)
 
         if(!isMatched){
             return res.json({
@@ -41,62 +42,59 @@ const loginUser = async (req, res) => {
     }
 };
 
-//jwt token - CREATED
 const createToken = (id) => {
-    return jwt.sign({id},process.env.JWT_SECRET);
+    return jwt.sign({ id }, process.env.JWT_SECRET);
 }
 
-//register - logic
+//register user
 const registerUser = async (req, res) => {
-    const {name,password,email} = req.body;
+    const { name, password, email } = req.body;
     try {
-        //checking user already exists
-        const exists = await userModel.findOne({email});
-        if (exists) {
+        //if user exists
+        const exists = await userModel.findOne({email})
+        if(exists){
             return res.json({
-                success: false,
+                success : false,
                 message : "User already exists"
             })
         }
-        //validation - email format / passord
+        //validation email formal and string password
         if(!validator.isEmail(email)){
             return res.json({
-                success: false,
-                message : "Enter a valid Email"
+                success : false,
+                message : "Enter a valid email"
             })
         }
-        if(!validator.isStrongPassword(password)){
+        if (password.length < 8) {
             return res.json({
-                success: false,
-                message : "Provide a strong password"
-            })
+            success: false,
+            message: "Password must be at least 8 characters long"
+            });
         }
 
-        //hashing the password
-        const salt = await bicrypt.genSalt(10) // 5-15 range
-        const hashedPassword = await bicrypt.hash(password,salt);
+        //hashing password
+        const salt = await bcrypt.genSalt(10) // 5-15 range
+        const hashedPassword = await bcrypt.hash(password, salt);
 
-        //PUTTING THE CREDS IN DB
-        const newUser = new userModel({
+        const newUser = new userModel ({
             name : name,
-            email : email,
-            password : hashedPassword, //using the hashed password
+            email : email ,
+            password : hashedPassword
         })
 
-        //save the user
+        await newUser.save()
+
         const user = await newUser.save();
-        //create a token jwt
-        const token = createToken(user._id);
-        res.json({
-            success: true,
+        const token = createToken(user._id)
+        return res.json({
+            success : true,
             token
         })
-
     } catch (error) {
-        console.log(error);
+        console.log(error)
         res.json({
             success : false,
-            message : "Error"
+            message : "Error occurred during registration"
         })
     }
 };

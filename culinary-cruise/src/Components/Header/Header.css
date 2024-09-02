@@ -34,6 +34,7 @@
     padding: 1vh 2.3vw;
     background-color: white;
     font-size: max(1vw,13px);
+    border-radius: 10px;
 }
 
 /* Making the header responsive */

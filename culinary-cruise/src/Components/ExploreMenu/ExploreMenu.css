@@ -23,6 +23,7 @@
     margin: 20px 0px;
     overflow-x: scroll;
 }
+
 .explore-menu-list::-webkit-scrollbar{
     display: none;
 }
@@ -33,6 +34,7 @@
     border-radius: 50%;
     transition: 0.2s ;
 }
+
 .explore-menu-list-item p{
     margin-top: 10px;
     color: #747474;
@@ -53,9 +55,10 @@
 }
 
 /* Making the explore section responsive */
+
 @media (max-width : 1050px){
     .explore-menu-text{
         max-width: 100%;
         font-size: 14px;
     }
-}
+} 

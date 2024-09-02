@@ -19,6 +19,27 @@
 - **nodemon**: A tool that automatically restarts your Node.js server when file changes in the directory are detected.
 
 
-Screenshhot of the Project
+Screenshot of the Project
 
+# Landing page
 ![image](https://github.com/user-attachments/assets/4c752288-0eca-4893-a3b2-cf3833e8afc9)
+
+# Login Page 
+![image](https://github.com/user-attachments/assets/247b43af-4725-4b91-81d5-5c24dbf64369)
+
+# Content page
+  ![image](https://github.com/user-attachments/assets/112e760a-4e2d-4802-85f4-aeedb23dc19e)
+
+
+# Footer
+  ![image](https://github.com/user-attachments/assets/5ba89ceb-e1fd-4e02-b96d-b3198eda0f93)
+  
+# Items added in the cart
+  ![image](https://github.com/user-attachments/assets/58ca501d-bd15-49b8-ba45-4d9c1b7fa87b)
+
+# Delivery page
+  ![image](https://github.com/user-attachments/assets/3e6bf687-9206-40b0-a603-cc66ae72ac89)
+
+# For managing the website admin panel is created : for adding food and removing food
+![image](https://github.com/user-attachments/assets/e2909876-5249-4303-af40-38c1f8161a30)
+

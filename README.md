@@ -86,7 +86,7 @@ The admin panel is a React-based interface for managing the Culinary Cruise webs
 To start the admin panel:
 
 ```bash
-cd admin-culnary
+cd admin-culinary
 npm install
 npm start
 ```

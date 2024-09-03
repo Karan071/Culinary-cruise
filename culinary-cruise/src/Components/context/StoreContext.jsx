@@ -25,7 +25,7 @@ const StoreContextProvider = (props) => {
         setCartItems(response.data.cartData)
     }
 
-    //for preventing the token after refresh
+    // for preventing the token after refresh
     useEffect(()=> {
         async function loadData(){
             await fetchFoodList();
@@ -36,6 +36,17 @@ const StoreContextProvider = (props) => {
         }
         loadData()
     },[])
+    // useEffect(() => {
+    //     async function loadData(){
+    //         await fetchFoodList();
+    //         if(localStorage.getItem("token")){
+    //             setToken(localStorage.getItem("token"))
+    //             await loadCartData(localStorage.getItem("token"))
+    //         }
+    //     }
+    //     loadData()
+    // }, [token]); // <-- add token here if you want to refetch when token changes
+    
         
     // function for adding to cart
         const addToCart = async (itemId) => {

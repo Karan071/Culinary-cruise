@@ -11,7 +11,7 @@ const StoreContextProvider = (props) => {
 
 
     const [cartItems,setCartItems] = useState({});
-    const url = "https://culinary-cruise-brach.onrender.com/"
+    const url = "https://culinary-cruise-brach.onrender.com"
 
     const [token,setToken] = useState("");
 

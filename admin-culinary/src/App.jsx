@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const url = "https://culinary-cruise-adminpanel.onrender.com"
+  const url = "https://culinary-cruise-brach.onrender.com"
 
   return (
     <>

@@ -9,6 +9,7 @@ Culinary Cruise is a full-stack food delivery application that provides a seamle
 - [Admin Panel](#admin-panel)
 - [Setup Instructions](#setup-instructions)
 - [Screenshots](#screenshots)
+- [Live Deployment](#live-deployement-)
 
 ## Frontend
 
@@ -136,4 +137,5 @@ Admin Panel: npm start dev inside the admin directory.
 ### Payment portal : use this dummy card details
 Dummy payment : Card Number : 4000 0035 6000 0008
 ```
-
+## Live Deployement :
+  https://culinary-cruise-front-end.onrender.com/

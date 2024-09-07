@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home/Home'
-import Cart from './pages/Cart/Cart'
-import Placeorder from './pages/Placeorder/Placeorder'
+import Home from './Pages/Home/Home'
+import Cart from './Pages/Cart/Cart'
+import Placeorder from './Pages/Placeorder/Placeorder'
 import Footer from './Components/Footer/Footer'
 import LoginPopup from './Components/LoginPopUp/LoginPopup';
-import Verify from './pages/Verify/Verify'
-import MyOrders from './pages/MyOrders/MyOrders'
+import Verify from './Pages/Verify/Verify'
+import MyOrders from './Pages/MyOrders/MyOrders'
 
 const App = () => {
   //state variable for popup login

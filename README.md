@@ -138,4 +138,8 @@ Admin Panel: npm start dev inside the admin directory.
 Dummy payment : Card Number : 4000 0035 6000 0008
 ```
 ## Live Deployement :
+  - Front End : 
   https://culinary-cruise-front-end.onrender.com/
+
+  - Admin Panel :
+  https://culinary-cruise-adminpanel.onrender.com/
